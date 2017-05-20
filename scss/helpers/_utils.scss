@@ -1,0 +1,49 @@
+$med-gray: #666666;
+$black: #252525; 
+$white: #ffffff;
+$highlight: #0fbfc5;
+
+$font: 'Roboto', sans-serif;
+$fontW-light: 300;
+$fontW-reg: 400;
+$fontW-bold: 500;
+$fontS-reg: 13px;
+
+$text-caps: uppercase;
+
+$media: screen;
+$media-min: min-width; 
+$width-med: 35em;
+$width-large: 46em;
+
+$mpadding: 10px 20px 10px 40px;
+$dpadding: 0 20px;
+
+@mixin bodyBase(){
+	font-family: $font;
+	font-weight: $fontW-reg;
+	color: $text-gray
+	font-size: $fontS-reg;
+
+}
+
+@mixin paraText(){
+	font-weight: $fontW-light;
+	font-size: 22px;
+}
+
+@mixin button(){
+	background-color: $highlight;
+	color: $text-white;
+	text-transform: $text-caps;
+}
+
+body {
+	@include bodyBase;
+}
+
+.header-content {
+	background-color: $black;
+	color: $white;
+	height: 60px;
+}
