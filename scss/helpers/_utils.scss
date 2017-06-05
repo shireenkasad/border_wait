@@ -22,7 +22,7 @@ $dpadding: 0 20px;
 @mixin bodyBase(){
 	font-family: $font;
 	font-weight: $fontW-reg;
-	color: $text-gray
+	color: $med-gray;
 	font-size: $fontS-reg;
 
 }
@@ -34,16 +34,47 @@ $dpadding: 0 20px;
 
 @mixin button(){
 	background-color: $highlight;
-	color: $text-white;
+	color: $white;
 	text-transform: $text-caps;
 }
 
 body {
 	@include bodyBase;
 }
-
-.header-content {
-	background-color: $black;
-	color: $white;
-	height: 60px;
+a{
+	text-decoration: none;
 }
+
+img {
+	width: 100%;
+}
+
+header{
+
+	.header-content {
+		background-color: $black;
+		color: $white;
+		height: 20px;
+		padding: 20px;
+	}
+	a {
+		color: $white;
+	}
+	#header-logo {
+		width: 112px;
+	}
+}
+.content {
+	text-align: center;
+	margin: 0 auto;
+}
+h1 {
+	font-weight: 300;
+	}
+
+	.select {
+		width: 320px; // MOBILE
+		text-align: center;
+		margin: 0 auto;
+	}
+
