@@ -26,13 +26,13 @@ gulp.task('clean', function(){
 });
 
 gulp.task('build', ['compileSass'], function(){
-	return gulp.src(["css/application.css"], { base:'./' })
+  return gulp.src(["css/application.css", "img/**", "*.html"], { base:'./' })
 	.pipe(gulp.dest("dist"));
 });
 
 gulp.task('serve', ['watchFiles']);
 
-gulp.task('default',[ "clean"], function(){
+gulp.task('default', ["clean"], function(){
 	gulp.start('build');
 });
 

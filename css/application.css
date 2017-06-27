@@ -365,6 +365,9 @@ a {
 img {
   width: 100%; }
 
+.hide {
+  display: none; }
+
 header .header-content {
   background-color: #252525;
   color: #ffffff;
@@ -384,10 +387,41 @@ header #header-logo {
 h1 {
   font-weight: 300; }
 
-.select {
+.page {
   width: 320px;
   text-align: center;
   margin: 0 auto; }
+
+.country {
+  border-bottom: 1px solid #ccc; }
+
+.state-block {
+  padding: 20px 0;
+  text-align: left; }
+  .state-block .state-main {
+    height: 100%;
+    display: flex;
+    align-items: center; }
+  .state-block .thumb {
+    width: 54px; }
+  .state-block .text {
+    padding-left: 20px; }
+    .state-block .text .name {
+      display: inline-block;
+      font-weight: 500;
+      text-transform: uppercase;
+      font-size: 17px; }
+    .state-block .text .port-no {
+      display: inline-block; }
+  .state-block .ports {
+    position: relative;
+    left: 64px; }
+    .state-block .ports .port-name {
+      text-transform: uppercase;
+      text-transform: uppercase;
+      padding: 12px 10px 11px 10px;
+      border: 1px solid #ccc;
+      margin-top: -1px; }
 
 /*
 @import 'base/base';

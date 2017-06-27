@@ -368,14 +368,29 @@ img {
 header .header-content {
   background-color: #252525;
   color: #ffffff;
-  height: 60px;
-  padding: 0 20px; }
+  height: 20px;
+  padding: 20px; }
 
 header a {
   color: #ffffff; }
 
 header #header-logo {
   width: 112px; }
+
+.content {
+  text-align: center;
+  margin: 0 auto; }
+
+h1 {
+  font-weight: 300; }
+
+.select {
+  width: 320px;
+  text-align: center;
+  margin: 0 auto; }
+
+.country {
+  border-bottom: 1px solid #ccc; }
 
 /*
 @import 'base/base';

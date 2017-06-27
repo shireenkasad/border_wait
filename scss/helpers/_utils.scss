@@ -49,6 +49,10 @@ img {
 	width: 100%;
 }
 
+.hide {
+	display: none;
+}
+
 header{
 
 	.header-content {
@@ -72,9 +76,50 @@ h1 {
 	font-weight: 300;
 	}
 
-	.select {
+	.page {
 		width: 320px; // MOBILE
 		text-align: center;
 		margin: 0 auto;
 	}
 
+.country {
+	border-bottom: 1px solid #ccc;
+
+}
+.state-block{	  
+	padding: 20px 0;
+	text-align: left;
+
+	.state-main {
+		height: 100%;
+    	display: flex;
+    	align-items: center;
+	}
+
+	.thumb {
+		width: 54px;
+	}
+	.text{
+		padding-left: 20px;
+		.name {
+			display: inline-block;
+			font-weight: $fontW-bold;
+			text-transform: uppercase;
+			font-size: 17px;
+		}
+		.port-no{
+			display: inline-block;
+		}
+	}
+	.ports {
+		position: relative;
+    	left: 64px;
+		.port-name{
+			text-transform: uppercase;
+			text-transform: uppercase;
+		    padding: 12px 10px 11px 10px;
+		    border: 1px solid #ccc;
+		    margin-top: -1px;
+		} 
+	}
+}
